@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -112,7 +113,9 @@ dd{
 
 dl dd:last-child{
     margin-bottom: 20px;
-}.pie{
+}
+
+.pie{
     width: 100%;
     height: 300px;
     background-color: #ee5033;
@@ -121,4 +124,24 @@ dl dd:last-child{
     align-items: center;
     font-weight: bold;
     border-top: 4px solid white;
+}
+
+@media (max-width: 850px){
+    .logo img{
+        display: none;
+    }
+
+    .menu-list{
+        flex-direction: column;
+    }
+
+    dl{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .header{
+       height: 400px;
+    }
 }
