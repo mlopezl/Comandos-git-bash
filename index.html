@@ -145,7 +145,54 @@
               <dd>Nos lleva a cualquier <em>commit</em> sin borrar los <em>commits</em> posteriores al <em>tag</em> seleccionado.</dd>
             </dl>
           </section>
-          
+
+          <section class="conceptos">
+            <h2 class="titulo" id="github">Comandos básicos de Git con GitHub</h2>
+            <dl>
+              <dt>git remote add origin</dt>
+              <dd>Agrega un origen remoto donde se ubicarán los repositorios o se copiará un repositorio. Se debe agregar el enlace proporcionado por GitHub.</dd>
+              
+              <dt>git remote</dt>
+              <dd>Muestra si tenemos un origen remoto configurado.</dd>
+              
+              <dt>git remote -v</dt>
+              <dd>Muestra los tipos de orígenes que tenemos, usualmente <em>fetch</em> y <em>push</em>.</dd>
+              
+              <dt>git branch -m main</dt>
+              <dd>Establece la rama <em>main</em> como principal.</dd>
+              
+              <dt>git push origin main</dt>
+              <dd>Sube nuestro repositorio local al origen remoto.</dd>
+              
+              <dt>git pull origin main</dt>
+              <dd>Copia el repositorio remoto a nuestro repositorio local o lo actualiza en caso de que ya haya sido copiado anteriormente.</dd>
+              
+              <dt>--allow-unrelated-histories</dt>
+              <dd>Permite fusionar historias sin relación al copiar un repositorio remoto en nuestro local. Se debe usar con <em>git pull</em>.</dd>
+              
+              <dt>git log --all --graph --decorate --oneline</dt>
+              <dd>Muestra los <em>commits</em> con un pequeño diagrama y la información resumida.</dd>
+              
+              <dt>git tag -a v0.n -m</dt>
+              <dd>Agrega un <em>tag</em> con el nombre <em>v0n</em>.</dd>
+              
+              <dt>git tag</dt>
+              <dd>Muestra los <em>tags</em> existentes.</dd>
+              
+              <dt>git show-ref --tags</dt>
+              <dd>Muestra los <em>tags</em> junto con sus <em>commits</em>.</dd>
+              
+              <dt>git push origin --tags</dt>
+              <dd>Sube todos los <em>tags</em> al repositorio remoto.</dd>
+              
+              <dt>git tag -d nombre</dt>
+              <dd>Elimina el <em>tag</em> del repositorio local.</dd>
+              
+              <dt>git push origin :refs/tags/nombre</dt>
+              <dd>Elimina el <em>tag</em> del repositorio remoto.</dd>
+            
+            </dl>
+        </section>    
     </main>
 </body>
 </html>
