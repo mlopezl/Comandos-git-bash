@@ -89,6 +89,63 @@
             <dd>Muestra una información bastante breve del comando.</dd>
           </dl>
         </section>
+
+        <section class="conceptos" id="comandos-git">
+            <h2 class="titulo">Comandos básicos de Git</h2>
+            <dl>
+              <dt>git init</dt>
+              <dd>Inicia un repositorio en el directorio actual.</dd>
+              
+              <dt>git status</dt>
+              <dd>Muestra el estado del repositorio.</dd>
+              
+              <dt>git add .</dt>
+              <dd>Agrega los archivos del directorio al <em>stage</em> y los prepara para el <em>commit</em>.</dd>
+              
+              <dt>git commit -m</dt>
+              <dd>Agrega los archivos al repositorio, dejando una versión de los archivos en el historial.</dd>
+              
+              <dt>git commit -am</dt>
+              <dd>Permite agregar los cambios de un archivo o archivos en el repositorio y hacer un <em>commit</em> o versión a la vez.</dd>
+              
+              <dt>git log</dt>
+              <dd>Muestra todo el historial de los <em>commits</em> o versiones realizadas de los archivos del directorio.</dd>
+              
+              <dt>git reset soft</dt>
+              <dd>Elimina los archivos del repositorio, pero no los elimina del <em>stage</em> ni del directorio.</dd>
+              
+              <dt>git reset mixed</dt>
+              <dd>Elimina los archivos del repositorio y del <em>stage</em>, pero no del directorio.</dd>
+              
+              <dt>git reset hard</dt>
+              <dd>Elimina los archivos del repositorio, del <em>stage</em> y del directorio.</dd>
+              
+              <dt>git rm</dt>
+              <dd>Elimina los archivos del directorio, pero no elimina las versiones del repositorio.</dd>
+              
+              <dt>git checkout</dt>
+              <dd>Permite cambiar entre las versiones que existen en el repositorio y entre las ramas existentes.</dd>
+              
+              <dt>git branch</dt>
+              <dd>Permite crear una nueva rama. Se debe agregar el nombre de la nueva rama.</dd>
+              
+              <dt>git show-branch</dt>
+              <dd>Muestra todas las ramas que existen en forma de lista.</dd>
+              
+              <dt>gitk</dt>
+              <dd>Muestra una interfaz gráfica de Git.</dd>
+              
+              <dt>git checkout -b</dt>
+              <dd>Genera una nueva rama y nos mueve a ella directamente.</dd>
+              
+              <dt>git reset id-commit</dt>
+              <dd>Nos lleva a cualquier <em>commit</em>, sin importar la rama, eliminando el historial de los <em>commits</em> posteriores al <em>tag</em> seleccionado.</dd>
+              
+              <dt>git reset rama-o-id-commit</dt>
+              <dd>Nos lleva a cualquier <em>commit</em> sin borrar los <em>commits</em> posteriores al <em>tag</em> seleccionado.</dd>
+            </dl>
+          </section>
+          
     </main>
 </body>
 </html>
